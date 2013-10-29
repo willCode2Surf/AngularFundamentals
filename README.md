@@ -1,28 +1,61 @@
-#Angular - The Fundamentals
+#Angular - Introduction
 
-Angular is hot but what makes it such a competitive and viable option to other frameworks?
+Before beginning the code portion it is important to visit the AngularJs website.  Below are a couple key links to get to the download and resources you will reference will using Angular to develop applications.
 
-This repo is aimed at walking you through the basics of Angular to the point of writing custom directives and even testing your code.  This guide should get you started on the path to writing nice Angular code.
+###Angular Library Download
+<http://angularjs.org>  
 
-Each branch of the repo walks through a series of features and prepares you for more advanced topics.
+On the AngularJs website there will be an option to download the library or visit the Github repo.  The Github repo would require us to build the library so at this stage of the introduction we will just want to download it.
 
-Contributorsn and feedback are always welcome.  New recipes in topic segmnents are welcome.  Simply fork the repo, make modifications, enhancements, or new additions and submit a pull request.  
+###Angular Developer Guide
+<http://docs.angularjs.org/guide/>
 
-#What is covered in this repo and how everything is laid out.
+This is a key resource to any Angular developer.  The guide has various topics that users can select, research, and discuss.
 
->Section / Branch Overviews
->>An overview of the section including the objectives will be in the README file.  Any supplemental or external resources will be referenced here as well as support and feedback options.
->
->Current Section / Branches 
->>1. Angular Introduction
->>>The Hello World demo with overview of Angular Architecture 
->>2. Controllers
->>>Discover controllers, scope, list, events and directives with recipes.  Explore built in directives, event directives, filtering and see two way binding in action with validation.
->>3. Services
->>>An introduction to services in Angular with recipes and demos spanning the built-in services such as $http, $q, $parse, and $filter (many others) as well as custom services.
->>4.  Routing
->>>Routing introduction for single page applications (SPA) with recipes for handling browser history, using the $route Service, HTML5 routing and accessing parameters.
->>5.  Custom Directives
->>>Custom Directive recipes for many objectives and common challenges such as isolating directive scope, handling events, responding to changes.  Advanced recipes introduce Transclusion and how to use Require with Nested Directives as well as other advanced topics.
->>6.  Testing
->>>Karma introduction/installation and use with Webstorm (IDE).  Recipes for testing controllers, services, directives, and end to end testing as well.
+###Angular API Reference
+<http://docs.angularjs.org/api/>
+
+Developers should be aware of where the API is for any technology they are using to create applications.  This is the detailed scaffolding overview and information of the entire Angular stack and will be a goto reference.
+
+#What is Angular
+
+Angular is an open source project written in JavaScript that is maintained by Google and has over 100 unique contributors.  By most references Angular is often described as an MVC framework but the Angular team calls it an MV* framework.
+
+What is the star for?  It simply means that frameworks adopting the MV* approach represent Model / View / [Controller / Presenter / View Model] philosophy.  Angular actually uses a Controller.
+
+Angular is similiar to some familiar other familiar frameworks in the open source community and will often be categorized in the likes of BackboneJs, KnockoutJs, and EmberJs among others.
+
+>Angular Is Opinionated and allows Vision
+>>Angular is proud to opinionated but what does that actually mean to developers?
+>>>The term opinionated means that the framework will *guide* developers *NOT enforce* them.  This means that there can be many different ways to accomplish something (such as manipulate the DOM) in Angular but the framwork **recommends** one way to accomplish something.
+
+>>>This vision is *broad* and can cause confusion on larger teams because simple work is left to the developer.  This lack of idiomatic structure can become a maintainence issue if not addressed early on and **rigid** coding standards are enforced.
+
+#Angular Features
+>Angular will offer many features and what makes Angular special will vary from developer to developer so here is a quick list of the highlights Angular offers.
+
+>>* handles Ajax calls for developers
+* data stored in Plain Old JavaScript Object (POJO)
+* handles page display
+* two-way binding
+* routing
+* testable (unit and end to end testing with Karma)
+* extends the HTML vocabulary through directives
+* futuristic and forward thinking (web components, Object.observe)
+
+#Angular Architecture
+>Angular is built on a few key concepts that should be understood as the keys to Angular's architecture.
+
+>>* two-way binding
+* dirty checking; model data can respond to changes in POJOs
+* dependency injection; Angular is built on this concept
+
+#Angular Components
+
+>Controllers
+>>controllers are the central player and contain logic/state info
+>Views
+>>views are where bindings and directives live
+>>>this is where Angular communicates with the end user
+>Services
+>>services encapsulate the complex business logic of the app, manage state, and handle server communication.
