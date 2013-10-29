@@ -59,3 +59,22 @@ Angular is similiar to some familiar other familiar frameworks in the open sourc
 >>>this is where Angular communicates with the end user
 >Services
 >>services encapsulate the complex business logic of the app, manage state, and handle server communication.
+
+#Hello Angular World
+The first dive into Angular will be very simple but allow us a chance to look at the key components and architecture discussed.  We are going to walk through the different portions of the `index.html` file.
+
+>*Step 1: The basic html shell* 
+```
+<!DOCTYPE html>
+<html lang="en" ng-app>
+    <head>
+		<meta charset="UTF-8">
+		<title>Hello Angular World</title>
+	</head>
+    <body>
+	</body>
+</html>
+```
+>Everything looks pretty standard here with the exception of the `ng-app` attribute inside the `html` tag.  This is part of every Angular application.
+
+>*Step 2: Adding an Angular expression with a 
