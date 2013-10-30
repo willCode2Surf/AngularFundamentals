@@ -68,7 +68,7 @@ The first dive into Angular will be very simple but allow us a chance to look at
 <!DOCTYPE html>
 <html lang="en" ng-app>
     <head>
-		<meta charset="UTF-8">
+    	<meta charset="UTF-8">
 		<title>Hello Angular World</title>
 	</head>
     <body>
