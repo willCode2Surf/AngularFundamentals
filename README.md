@@ -111,8 +111,6 @@ The first dive into Angular will be very simple but allow us a chance to look at
 >*Summary*
 >The `index.html` page will now run and should look as follows:
 ```
-
-<!DOCTYPE html>
 <html lang="en" ng-app>
 	<head>
 		<meta charset="UTF-8">
@@ -128,5 +126,4 @@ The first dive into Angular will be very simple but allow us a chance to look at
 		</script>
 	</body>
 </html>
-
 ```
