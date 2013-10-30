@@ -14,7 +14,7 @@ Contributorsn and feedback are always welcome.  New recipes in topic segmnents a
 >>An overview of the section including the objectives will be in the README file.  Any supplemental or external resources will be referenced here as well as support and feedback options.
 >
 >Current Section / Branches 
->>1. Angular Introduction
+>>1. [Angular Introduction](https://github.com/willCode2Surf/AngularFundamentals/tree/Introduction)
 >>>The Hello World demo with overview of Angular Architecture 
 >>2. Controllers
 >>>Discover controllers, scope, list, events and directives with recipes.  Explore built in directives, event directives, filtering and see two way binding in action with validation.
