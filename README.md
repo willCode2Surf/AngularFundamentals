@@ -77,4 +77,56 @@ The first dive into Angular will be very simple but allow us a chance to look at
 ```
 >Everything looks pretty standard here with the exception of the `ng-app` attribute inside the `html` tag.  This is part of every Angular application.
 
->*Step 2: Adding an Angular expression with a 
+>*Step 2: Adding an Angular expression*
+>The expressionis contains a placeholder that will display our hello message.  We will put this expression inside of an `<h1>` tag inside the body.  
+```
+    <body>
+      <h1>{{helloAngularMessageHolder}}</h1>
+	</body>	
+```
+
+>*Step 3:  Adding Angular*
+>The expression above will not serve us much purpose nor will any other ng (Abbreviation for Angular) tags until we make the framework available.  As with JavaScript best practices we will do this towards or at the end of the body tag.
+```
+	<script src="angular.min.js"></script>
+	</body>
+```
+>*Step 4:  Adding the Controller*
+>So that we can modify the placeholder in our expression we will create a quick Angular Controller with another `<script>` tag.  You will notice that in the Controller we are passing a `$scope` parameter.   
+>>This special parameter is used to move data between the controller and the view.  We can assign properties to the $scope variable and they are availble in the view.
+>Notice that the name of the function is the controller name.  This block of code is placed after the Angular library is included.
+```
+		<script type="text/javascript">
+			function HelloAngularWorldCtrl($scope){
+				$scope.helloAngularMessageHolder = "Hello Angular World!";
+			}
+		</script>
+```
+>*Step 5:  Wiring up the Controller*
+>In order for the expression and the $scope to work in conjunction we need to assign an `ng-controller` attribute on the tag that holds the expression.  We will set the value of the attribute to be the Controller name that it is working with.  
+```
+		<h1 ng-controller="HelloAngularWorldCtrl">{{helloAngularMessageHolder}}</h1>
+```
+
+>*Summary*
+>The `index.html` page will now run and should look as follows:
+```
+
+<!DOCTYPE html>
+<html lang="en" ng-app>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hello Angular World</title>
+	</head>
+	<body>
+		<h1 ng-controller="HelloAngularWorldCtrl">{{helloAngularMessageHolder}}</h1>
+		<script src="angular.min.js"></script>
+		<script type="text/javascript">
+			function HelloAngularWorldCtrl($scope){
+				$scope.helloAngularMessageHolder = "Hello Angular World!";
+			}
+		</script>
+	</body>
+</html>
+
+```
