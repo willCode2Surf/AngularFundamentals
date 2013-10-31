@@ -26,3 +26,7 @@ Contributorsn and feedback are always welcome.  New recipes in topic segmnents a
 >>>Custom Directive recipes for many objectives and common challenges such as isolating directive scope, handling events, responding to changes.  Advanced recipes introduce Transclusion and how to use Require with Nested Directives as well as other advanced topics.
 >>6.  Testing
 >>>Karma introduction/installation and use with Webstorm (IDE).  Recipes for testing controllers, services, directives, and end to end testing as well.
+
+#Using Jekyll with this repo
+
+I will be adding a gh-pages branch soon to make this repo and it's samples viewable without having to clone it to the desktop and run it locally.  If you want to clone it and run it locally then I would suggest using Jekyll to do it.
